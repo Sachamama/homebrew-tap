@@ -13,7 +13,7 @@ class Sacha < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Sachamama/sacha/releases/download/v0.1.3/sacha_0.1.3_darwin_amd64.tar.gz"
-      sha256 "aa710fd3d78b0c2fad4dee67a4b2711da06dd32439f9df4d05b1c63d981ca4c9"
+      sha256 "9e7a91dbbc6bbf9c392f369c8cb838243eef8fc59adb900976ada7ddda49eb0c"
 
       def install
         bin.install "sacha"
@@ -21,7 +21,7 @@ class Sacha < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Sachamama/sacha/releases/download/v0.1.3/sacha_0.1.3_darwin_arm64.tar.gz"
-      sha256 "6f176aafc6c8d68eeca5a65917dffe9d03acb7a6e5290fccadb297144d2a4e4d"
+      sha256 "8fd5a78dc6d5467cfd8f3f07fcef5aa165605ce526e2296e7eb27a5e9bd417d2"
 
       def install
         bin.install "sacha"
@@ -32,14 +32,14 @@ class Sacha < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Sachamama/sacha/releases/download/v0.1.3/sacha_0.1.3_linux_amd64.tar.gz"
-      sha256 "6cf09828cf69ed6c6e22c97b300eede5a5c94c6affcc76e01866385932586cfb"
+      sha256 "9a08a9c495e4f9f2728042a6e6fe5b053122d027670bb65090f14bff3b6191bc"
       def install
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Sachamama/sacha/releases/download/v0.1.3/sacha_0.1.3_linux_arm64.tar.gz"
-      sha256 "6ed106294ff237fb1c4ea1bfa8f41a8f5c8436a58f41ff2e96409cba5dcbeec8"
+      sha256 "3d1d66972ccb8901b9a9d6f057a5baf3e83f61d5309ff1d2c5a792837020e3bd"
       def install
         bin.install "sacha"
       end
