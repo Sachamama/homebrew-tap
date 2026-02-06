@@ -5,23 +5,23 @@
 class Sacha < Formula
   desc "Keyboard-first AWS TUI"
   homepage "https://github.com/Sachamama/sacha"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   depends_on "go" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.6.0/sacha_0.6.0_darwin_amd64.tar.gz"
-      sha256 "ba5036c119051c8786e83845e3ae4ad0ef12722096f1e71e489f17205229dacf"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.6.1/sacha_0.6.1_darwin_amd64.tar.gz"
+      sha256 "d3bb144b61203a012a1cfcbbbe783706a0671ce14e81359e8fe553231da2fbba"
 
       def install
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.6.0/sacha_0.6.0_darwin_arm64.tar.gz"
-      sha256 "b3ed0478cdf5d0e660f370f0092deac2e4aaece618c3811c5a401f857b606c33"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.6.1/sacha_0.6.1_darwin_arm64.tar.gz"
+      sha256 "659e5514cbf50c72a0440cee276b3fa3e47a18273f412d00f577b74adf8f9656"
 
       def install
         bin.install "sacha"
@@ -31,15 +31,15 @@ class Sacha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.6.0/sacha_0.6.0_linux_amd64.tar.gz"
-      sha256 "c380082ca7a144de69570146eec0162716a9e20e63603cd2d9d2b9e26fca3880"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.6.1/sacha_0.6.1_linux_amd64.tar.gz"
+      sha256 "5dedf33b179ba567d069d707f4f05fefcdc1fdbd2ce9c06c0368cdd7ce1f45ce"
       def install
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.6.0/sacha_0.6.0_linux_arm64.tar.gz"
-      sha256 "de722d6fe77b90e27627847b8b538bb6e1bc8fb1830a8f31c3972374d2ac617c"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.6.1/sacha_0.6.1_linux_arm64.tar.gz"
+      sha256 "1058d5171884649b5ae715a79d02aa90707dd29cdbf853fa4afb7f1f0c9b8c6f"
       def install
         bin.install "sacha"
       end
