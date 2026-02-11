@@ -5,23 +5,23 @@
 class Sacha < Formula
   desc "Keyboard-first AWS TUI"
   homepage "https://github.com/Sachamama/sacha"
-  version "0.13.1"
+  version "0.13.2"
   license "MIT"
 
   depends_on "go" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.13.1/sacha_0.13.1_darwin_amd64.tar.gz"
-      sha256 "347e023cce3cf7a3235a65a3f9f988b588a2c22e2f9384509b5ba9d3ae1bde54"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.13.2/sacha_0.13.2_darwin_amd64.tar.gz"
+      sha256 "05692cdd78b8fd9c86667d5872ff23abc1ef6de0c51945d452b503de008a30cc"
 
       def install
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.13.1/sacha_0.13.1_darwin_arm64.tar.gz"
-      sha256 "4c962d1c9cbc711164c4ba6683e095d3a1495c664f69a96c7902b7a99ceae9ca"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.13.2/sacha_0.13.2_darwin_arm64.tar.gz"
+      sha256 "a1623a712daff58f6b46c7779fa305ea582aa196d1d1563ed8f21377ee553211"
 
       def install
         bin.install "sacha"
@@ -31,15 +31,15 @@ class Sacha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.13.1/sacha_0.13.1_linux_amd64.tar.gz"
-      sha256 "dac2b790b547f866c1c4b018fd0a3f325910631733bc05cbc63c05d31bef3c64"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.13.2/sacha_0.13.2_linux_amd64.tar.gz"
+      sha256 "ed9546639e11030b23878e72a9fe3ed46f959bd95d5750b3a424684d8a212e25"
       def install
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sachamama/sacha/releases/download/v0.13.1/sacha_0.13.1_linux_arm64.tar.gz"
-      sha256 "3486bd6eb544bccf4c8b85627e041adabf41883b7ef9277918fd723449a0094e"
+      url "https://github.com/Sachamama/sacha/releases/download/v0.13.2/sacha_0.13.2_linux_arm64.tar.gz"
+      sha256 "2a6524ee5064ae29b3bb42154ab851e002e8d23725ac32ed5bd0fd574b2236a0"
       def install
         bin.install "sacha"
       end
