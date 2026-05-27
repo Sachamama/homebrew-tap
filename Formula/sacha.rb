@@ -5,23 +5,23 @@
 class Sacha < Formula
   desc "Keyboard-first AWS TUI"
   homepage "https://github.com/Sachamama/sacha"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   depends_on "go" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sachamama/sacha/releases/download/v1.0.1/sacha_1.0.1_darwin_amd64.tar.gz"
-      sha256 "61fddabadd387fa6f2fd73982a29360fe2726505c1391ae5ba5ca93ec8dab61a"
+      url "https://github.com/Sachamama/sacha/releases/download/v1.1.0/sacha_1.1.0_darwin_amd64.tar.gz"
+      sha256 "91bf87808501909330f98f09b673c8333eccf2984cfb7ece52e6dbc6561f0014"
 
       define_method(:install) do
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sachamama/sacha/releases/download/v1.0.1/sacha_1.0.1_darwin_arm64.tar.gz"
-      sha256 "6822070922698ea6929c1b89f8f866d6b7264c5cd8a6c89107df4995f7dc3d12"
+      url "https://github.com/Sachamama/sacha/releases/download/v1.1.0/sacha_1.1.0_darwin_arm64.tar.gz"
+      sha256 "3c56884443ffa2bdbbb4c9892a40ca0d43f6bcd2e250e64d268edeb0a2d0c3a2"
 
       define_method(:install) do
         bin.install "sacha"
@@ -31,15 +31,15 @@ class Sacha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sachamama/sacha/releases/download/v1.0.1/sacha_1.0.1_linux_amd64.tar.gz"
-      sha256 "4126d6065d41c87b6b40d055d30f953d202dc9bd8a11af666ee1b094b5c65761"
+      url "https://github.com/Sachamama/sacha/releases/download/v1.1.0/sacha_1.1.0_linux_amd64.tar.gz"
+      sha256 "762202e9ed7b763bce4497b1cf4a601e9433bc705e4c42d98df4a83b7fb9409e"
       define_method(:install) do
         bin.install "sacha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sachamama/sacha/releases/download/v1.0.1/sacha_1.0.1_linux_arm64.tar.gz"
-      sha256 "c166753034da3e1402dfe2a88e18f799a23c0cebbb32cca9a16c8f122806c8d2"
+      url "https://github.com/Sachamama/sacha/releases/download/v1.1.0/sacha_1.1.0_linux_arm64.tar.gz"
+      sha256 "39d7f9f6d4b0153b507f4d66598891925bb76a289f26ece624f59a5a2dce739c"
       define_method(:install) do
         bin.install "sacha"
       end
